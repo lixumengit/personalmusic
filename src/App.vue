@@ -122,6 +122,8 @@ export default {
         down:null
       },
       p:null,
+
+      a: 'aaa',
       lrc:'',//歌词
       lrcObj:null,
       height:'auto',
