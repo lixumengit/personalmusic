@@ -2,6 +2,8 @@
 <div>
   <div id="app">
 
+
+
     
     <div class="header">
       这不是音乐播放器
@@ -131,6 +133,7 @@ export default {
   },
   mounted() {
     console.log(11111);
+    console.log(22222);
     this.$nextTick(() => {
         let bscrollDom = this.$refs.bscroll;
         this.aBScroll = new BScroll(bscrollDom,{
