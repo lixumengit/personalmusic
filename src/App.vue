@@ -122,6 +122,19 @@ export default {
         down:null
       },
       p:null,
+
+
+
+
+
+
+
+
+
+
+
+
+      
       
       lrc:'',//歌词
       lrcObj:null,
