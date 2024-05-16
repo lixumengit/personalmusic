@@ -133,6 +133,10 @@ export default {
     console.log(11111);
     this.$nextTick(() => {
         let bscrollDom = this.$refs.bscroll;
+        console.log(2222);
+        console.log(2222);
+        console.log(2222);
+        console.log(2222);
         this.aBScroll = new BScroll(bscrollDom,{
           click : true,
           pullUpLoad: {
@@ -151,15 +155,17 @@ export default {
   methods : {
     loadedmetadata(){//音乐加载完成后获取总时间
       this.duration = this.$refs.play.duration;
+      console.log(333333);
+      console.log(333333);
+    },
+    changetime(v){//进度条在松开滑动时触发，返回当前的选值，在滑动过程中不会触发
+      this.$refs.play.currentTime = v/100*this.$refs.play.duration;
+      this.isSlider = false;
     },
     timeupdate(){//音乐播放时实时获取当前播放时间
       if(this.isSlider) return;
       this.currentTime = this.$refs.play.currentTime;
       this.value1 = this.$refs.play.currentTime/this.$refs.play.duration*100;
-    },
-    changetime(v){//进度条在松开滑动时触发，返回当前的选值，在滑动过程中不会触发
-      this.$refs.play.currentTime = v/100*this.$refs.play.duration;
-      this.isSlider = false;
     },
     moving(){
       this.isSlider = true;
