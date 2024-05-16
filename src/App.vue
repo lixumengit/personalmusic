@@ -1,6 +1,8 @@
 <template>
 <div>
   <div id="app">
+
+    
     <div class="header">
       这不是音乐播放器
       <!-- 点击进入搜索界面 -->
@@ -128,6 +130,7 @@ export default {
     };
   },
   mounted() {
+    console.log(11111);
     this.$nextTick(() => {
         let bscrollDom = this.$refs.bscroll;
         this.aBScroll = new BScroll(bscrollDom,{
