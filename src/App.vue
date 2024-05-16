@@ -129,6 +129,8 @@ export default {
       duration : 0,//音乐总时间
       currentTime : 0,//当前播放的时间
       isSlider: false
+
+      
     };
   },
   mounted() {
