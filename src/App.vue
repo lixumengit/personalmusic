@@ -129,14 +129,9 @@ export default {
       duration : 0,//音乐总时间
       currentTime : 0,//当前播放的时间
       isSlider: false
-
-      
     };
   },
   mounted() {
-    console.log(33333);
-    console.log(11111);
-    console.log(22222);
     this.$nextTick(() => {
         let bscrollDom = this.$refs.bscroll;
         console.log(2222);
